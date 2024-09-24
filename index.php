@@ -1,7 +1,7 @@
 <?php
-require ("logica/Producto.php");
-require ("logica/Categoria.php");
-require ("logica/Marca.php");
+require_once ("logica/Producto.php");
+require_once ("logica/Categoria.php");
+require_once ("logica/Marca.php");
 ?>
 <html>
 <head>
@@ -81,7 +81,9 @@ require ("logica/Marca.php");
                             echo "<div class='text-center'><img src='https://icons.iconarchive.com/icons/custom-icon-design/mono-general-1/256/faq-icon.png' width='70%' /></div>";
                             echo "<a href='#'>" . $productoActual->getNombre() . "</a><br>";
                             echo "Cantidad: " . $productoActual->getCantidad() . "<br>";
-                            echo "Valor: $" . $productoActual->getPrecioVenta();
+                            echo "Valor: " . $productoActual->getPrecioVenta(). "<br>";
+							echo "Marca: " . $productoActual->getIdMarca()->getNombre() . "<br>";
+							echo "Categoria: " . $productoActual->getIdCategoria()->getNombre() . "<br>";
                             echo "</div>";
                             echo "</div>";
                             echo "</div>";

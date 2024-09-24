@@ -13,6 +13,7 @@ class CategoriaDAO{
                 from Categoria
                 order by nombre asc";
     }
+
 }
 
 ?>

@@ -1,6 +1,6 @@
 <?php
 require_once ("./persistencia/Conexion.php");
-require ("./persistencia/CategoriaDAO.php");
+require_once ("./persistencia/CategoriaDAO.php");
 
 class Categoria{
     private $idCategoria;
@@ -40,7 +40,8 @@ class Categoria{
         $conexion -> cerrarConexion();
         return $categorias;        
     }
-    
+
+
 }
 
 ?>
